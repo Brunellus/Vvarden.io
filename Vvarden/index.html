@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A Morrowind-like Web UI">
+    <meta name="author" content="John Mitrik">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Vvarden.io</title>
+
+    <!-- Place your stylesheet here-->
+    <link href="css/vvarden.css" rel="stylesheet" type="text/css">
+    <link href="css/vvarden.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+
+</head>
+
+<body>
+    
+    <div class="vv">
+       <div class="vv-top-bar"><span>Ciaus Cosades</span><i class="vv-settings-icon fas fa-cog"></i></div>
+       <div class="vv-main">
+         <span>So. You say your name is <span class="name">John</span>, and you've beeen told to report to me and deliver a package. Perhaps you'll let me look at it?</span>
+       </div>
+       <div class="vv-side-menu-top">
+         
+       </div>
+       <div class="vv-side-menu">
+          <ul class="vv-ul">
+        
+          </ul>
+       </div>
+       <div class="vv-side-menu-bottom">
+          <input type="button" class="vv-button" value="Ok">
+       </div>
+    </div>
+
+    
+  <div class="vv-overlay d-none"></div>
+    <div class="vv-settings d-none">
+    <i class="fas fa-times vv-settings-close vv-settings-closer"></i>
+     Menu Opacity:
+      <div class="vv-slider">
+        <div id="vv-handle" class="ui-slider-handle"></div>
+      </div>
+      <br/>
+     Music:
+      <div class="vv-slider">
+        <button id="prev" style="display:inline" class="vv-button"><i class="fas fa-backward"></i></button>
+        <button id="playback" style="display:inline" class="vv-button"><i class="fas fa-play"></i></button>
+        <button id="next" style="display:inline" class="vv-button"><i class="fas fa-forward"></i></button>
+      </div>
+      <br/>
+      <input type="button" class="vv-button-w vv-settings-closer" value="Close">
+    </div>
+    
+  <audio id="backtrack" src="sounds/mx_explore_0.mp3" preload="auto"/>
+  <audio id="menu" src="sounds/menuNEWxbx.wav" preload="auto"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    <script src="js/vvarden.js"></script>
+    
+
+</body>
+</html>

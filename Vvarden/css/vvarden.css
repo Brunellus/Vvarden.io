@@ -1,0 +1,245 @@
+:root{
+  --main-color: #A88A50;
+  --link-color: #515B95;
+  --info-color: #B6A381;
+}
+
+@font-face {
+  font-family: Magic;
+  src: url(../fonts/MagicCards.ttf)
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border: 3px solid var(--main-color);
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A88A50; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #B6A381; 
+}
+
+
+body{
+  font-family: Magic;
+  background-image: url('https://images.unsplash.com/photo-1536235799634-c6c21fdc2b9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center; 
+}
+
+a{
+  color:var(--link-color);
+  text-decoration: none;
+  
+}
+
+a:hover{
+  color:var(--info-color);
+  text-decoration: none;
+  
+}
+
+.d-none{
+  display: none;
+}
+
+.vv{
+  background: rgba(0,0,0,0.8);
+  height: 90vh;
+  margin: 20px 10px 20px 10px;
+  border: 3px ridge var(--main-color);
+}
+
+.vv-top-bar{
+  height: 25px;
+  background: var(--main-color);
+  cursor: move;
+    
+}
+
+.vv-top-bar > span{
+  background:#000;
+  color: var(--main-color);
+  padding-top:1px;
+  padding-left:4px;
+  padding-right:4px;
+  margin-left: 48%;
+  width:auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.vv-main{
+  border: 3px ridge var(--main-color);
+  height: 93%;
+  width: 73%;
+  margin: 9px 0 7px 9px;
+  overflow: auto;
+  color: var(--main-color);
+  padding-left: 8px;
+  padding-top: 8px;
+  float: left;
+}
+
+.vv-main-block{
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.vv-side-menu-top{
+  border: 3px ridge var(--main-color);
+  height: auto;
+  width: 23%;
+  margin-right: 9px;
+  margin-top: 9px;
+  color: var(--main-color);
+  padding-left: 8px;
+  padding-top: 8px;
+  float: right;
+}
+.vv-side-menu{
+  border: 3px ridge var(--main-color);
+  height: 85%;
+  width: 23%;
+  margin-right: 9px;
+  margin-top: 9px;
+  overflow: auto;
+  color: var(--main-color);
+  padding-left: 8px;
+  padding-top: 8px;
+  float: right;
+}
+.vv-side-menu-bottom{
+  height: auto;
+  width: 23%;
+  margin-right: 9px;
+  margin-top: 9px;
+  overflow: auto;
+  color: var(--main-color);
+  padding-left: 8px;
+  padding-top: 8px;
+  float: right;
+}
+
+.vv-settings-icon{
+  float:right;
+  color:#fff;
+  z-index: 100;
+  margin-right: 5px;
+  margin-top: 3px;
+  cursor: pointer
+}
+.vv-settings-close{
+  float:right;
+  color:#fff;
+  z-index: 100;
+  margin-right: 5px;
+  margin-top: 3px;
+  cursor: pointer
+}
+
+.vv-settings{
+  z-index:200;
+  height: auto;
+  color: var(--main-color);
+  padding:30px 45px;
+  position:absolute;
+  left:45%;
+  top:50%;
+  width:250px;
+  border: 3px ridge var(--main-color);
+  margin-left:-10px; /* -1/2 width */
+  margin-top:-10px; /* -1/2 height */
+}
+
+.vv-button{
+  border: 3px ridge var(--main-color);
+  color: var(--main-color);
+  width: 97%;
+  cursor: pointer;
+  padding: 1px 18px;
+  margin-bottom:15px;
+  background-color:transparent;
+  font-family: Magic;
+}
+
+.vv-button:hover{
+  background: rgba(140,116,70,.2)
+}
+
+.vv-button-w{
+  border: 3px ridge var(--main-color);
+  color: var(--main-color);
+  cursor: pointer;
+  padding: 1px 18px;
+  background-color:transparent;
+  font-family: Magic;
+  width:100%
+}
+
+.vv-button-w:hover{
+  background: rgba(140,116,70,.2)
+}
+
+.vv-overlay{
+  z-index:100;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0, 0.8);
+  position:absolute;
+  left:0%;
+  top:0%;
+}
+
+.vv-slider {
+  margin-top:20px;
+}
+
+#vv-handle {
+  width: 3em;
+  height: 1.6em;
+  top: 50%;
+  margin-top: -.8em;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.vv-ul{
+  margin-top:5px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.vv-li:hover{
+ color: #B9A172;
+  cursor: default;
+  background: rgba(0,0,0,.2)
+}
+
+.vv-topic{
+  display: block;
+  font-size: 17px;
+  margin-top:15px;
+  margin-bottom: 15px;
+  cursor: default;
+  color: var(--info-color)
+}
+.vv-content{
+  display: block;
+  margin-top:15px;
+  margin-bottom: 15px;
+  cursor: default;
+  color: var(--main-color)
+}
